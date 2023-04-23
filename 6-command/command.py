@@ -67,14 +67,14 @@ class UndoCommand(Command):
 
 history = History()
 video_editor = VideoEditor()
-contrast_command = ContrastCommand(video_editor=video_editor, history=history)
-text_command = TextCommand(video_editor=video_editor, history=history)
 
-contrast_command.execute(0.3)
-text_command.execute('amir')
-contrast_command.execute(1)
-text_command.execute('hasan')
+ContrastCommand(video_editor, history).execute(0.3)
+TextCommand(video_editor, history).execute('amir')
+ContrastCommand(video_editor, history).execute(1)
+TextCommand(video_editor, history).execute('hasan')
 
 undoCommand = UndoCommand(history=history)
+undoCommand.execute()
+undoCommand.execute()
 undoCommand.execute()
 undoCommand.execute()
