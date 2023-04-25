@@ -29,8 +29,6 @@ class XLSDataReader(DataReader):
     def _doHandle(self, filename):
         print('Reading data from an Excel spreadsheet.')
 
-    def __str__(self) -> str:
-        return 'This is excel spreadsheet handler'
 
 class NumbersDataReader(DataReader):
     def __init__(self):
@@ -38,19 +36,13 @@ class NumbersDataReader(DataReader):
 
     def _doHandle(self, filename):
         print('Reading data from a Numbers spreadsheet.')
-    
-    def __str__(self) -> str:
-        return 'this is numbers spreadsheet handler'
-
+ 
 class QBWDataReader(DataReader):
     def __init__(self):
         super().__init__('.qbw')
 
     def _doHandle(self, filename):
         print('Reading data from a QuickBooks file.')
-
-    def __str__(self) -> str:
-        return 'this is a QBW handler'
 
 filename = 'myfile.xls'
 my_handler=XLSDataReader() \
