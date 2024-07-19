@@ -1,1 +1,0 @@
-Here we would define the concept of `hook`. 
