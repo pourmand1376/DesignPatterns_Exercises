@@ -1,0 +1,1 @@
+If you want to separate object from its behavior, let's create other objects for every intended behavior! 
