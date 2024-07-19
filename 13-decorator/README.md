@@ -1,0 +1,1 @@
+HERE we add additional behavior to an existing object (without changing it each time!)
